@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Define a style to format labels -->
+    <style>
+        label{
+            display: inline-block;
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page title -->
+    <h1 align="center"><b>Sign Up...</b></h1>
+    
+    <!-- Form for user registration -->
+    <form method="post" align="center">
+        <!-- Input field for the last name with a label -->
+        <label for="nom">Your last name:</label>
+        <input type="text" name="nom" id="nom" maxlength="20" required><br>
+        
+        <!-- Input field for the first name with a label -->
+        <label for="prenom">Your first name:</label>
+        <input type="text" name="prenom" id="prenom" maxlength="20" required><br>
+        
+        <!-- Input field for the age with a label -->
+        <label for="age">Your age:</label>
+        <input type="number" name="age" id="age" maxlength="3" required><br>
+        
+        <!-- Radio buttons for selecting gender with labels -->
+        <label for="sexe">Your gender:</label>
+        <input type="radio" name="sexe" id="male" required>
+        <label for="male">Male</label>
+        <input type="radio" name="sexe" id="female" required>
+        <label for="female">Female</label><br>
+        
+        <!-- Checkboxes for selecting education level with labels -->
+        <label for="chiox">Your education:</label>
+        <input type="checkbox" name="bac" id="bac" value="Bac">
+        <label for="bac">Bac</label>
+        <input type="checkbox" name="licence" id="licence" value="Licence">
+        <label for="licence">Licence</label>
+        <input type="checkbox" name="master" id="master" value="Master">
+        <label for="master">Master</label><br>
+        
+        <!-- Dropdown for selecting internship category with a label -->
+        <label for="chiox">Your internship:</label>
+        <select id="m" name="m">
+            <option value="Development">Development</option>
+            <option value="Management">Management</option>
+            <option value="Network">Network</option>
+            <option value="Office">Office</option>
+        </select><br>
+        
+        <!-- Submit button to confirm registration -->
+        <input type="submit" value="OK">
+    </form>
+</body>
+</html>
